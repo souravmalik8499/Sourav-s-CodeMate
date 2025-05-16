@@ -25,7 +25,7 @@ function App() {
     console.log("Sourav");
 
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+      const response = await axios.post('https://sourav-s-code-mate.vercel.app/', { code })
       setreview(response.data)
       
     } catch (error) {
